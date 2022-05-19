@@ -1,0 +1,58 @@
+.features {
+    margin-top: 75px;
+    margin-inline: 18px;
+
+    @include breakpoint-up(large) {
+        margin-inline: 7%;
+    }
+
+    h3 {
+        color: #4D13D1;
+        font-size: 16px;
+        margin-bottom: 23px;
+
+        @include breakpoint-up(large) {
+            font-size: 20px;
+        }
+    }
+
+    h2 {
+        font-size: 36px;
+
+        @include breakpoint-up(large) {
+            // font-size: 20px;
+            max-width: 60%;
+        }
+    }
+
+    &-items {
+        margin-top: 52px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include breakpoint-up(large) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__cards {
+
+            // background-color: #4D13D1;
+            &__img {
+                margin-bottom: 17px;
+            }
+
+            span {
+                margin-top: 17px;
+                font-weight: 700;
+            }
+
+            p {
+                color: $primaryGray;
+                max-width: 80%;
+            }
+
+        }
+
+
+    }
+}

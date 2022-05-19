@@ -1,0 +1,43 @@
+.diverse {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #4D13D1;
+    margin-inline: 18px;
+    color: $white;
+    border-radius: 10px;
+
+    @include breakpoint-up(large) {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin-top: 70px;
+        margin-inline: 7%;
+    }
+
+    &-content {
+        padding-inline: 35px;
+        padding-top: 60px;
+
+        p {
+            color: #D3C4F8;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+
+        a {
+            background-color: $white;
+            color: #4D13D1;
+            font-weight: 700;
+            padding: 18px;
+        }
+    }
+
+    &-img {
+        margin-top: 51px;
+        // width: 100%;
+        padding-inline: 35px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

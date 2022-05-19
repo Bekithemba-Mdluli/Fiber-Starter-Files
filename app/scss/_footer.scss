@@ -1,0 +1,41 @@
+.footer {
+    background-color: $primaryCream;
+    margin-top: 40px;
+    padding-inline: 18px;
+    display: grid;
+    row-gap: 40px;
+    padding-top: 30px;
+
+    @include breakpoint-up(large) {
+        // grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        padding-inline: 7%;
+        column-gap: 3%;
+        padding-top: 50px;
+        row-gap: unset;
+    }
+
+    &__main {
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    &__links {
+        h1 {
+            font-size: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 10px;
+
+            li {
+                padding-block: 7px;
+                color: $primaryGray;
+            }
+        }
+    }
+}

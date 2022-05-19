@@ -2,6 +2,11 @@
     background-color: $primaryCream;
     padding-inline: 18px;
 
+    @include breakpoint-up(large) {
+        padding-inline: 7%;
+        padding-bottom: 60px;
+    }
+
     &-nav {
 
         &__items {
@@ -24,9 +29,20 @@
     }
 
     &-hero {
+        @include breakpoint-up(large) {
+            display: flex;
+            flex-direction: row-reverse;
+            // justify-content: space-evenly;
+            align-items: center;
+            margin-top: 81px;
+        }
 
         &__img {
 
+            @include breakpoint-up(large) {
+                // width: 50%;
+                flex: 1;
+            }
 
             img {
                 width: 100%;
@@ -34,12 +50,24 @@
         }
 
         &__content {
+            @include breakpoint-up(large) {
+                // width: 50%;
+                flex: 1;
+                // padding-top: 10%;
+                // margin-bottom: 60px;
+            }
+
             &__rating {
                 display: flex;
+
+                @include breakpoint-up(large) {
+                    margin-bottom: 34px;
+                }
 
                 &__star {
                     display: flex;
                     flex-direction: row;
+                    margin-right: 18px;
 
                     img {
                         width: 18px;
@@ -49,11 +77,56 @@
 
             h1 {
                 max-width: 60%;
+
+                @include breakpoint-up(large) {
+                    max-width: unset;
+                }
             }
 
             p {
                 line-height: 30px;
                 color: #676766;
+            }
+
+            &__cta {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                @include breakpoint-up(large) {
+                    // display: flex;
+                    flex-direction: row;
+                }
+
+                &__start {
+                    background-color: $primaryBlue;
+                    color: $white;
+                }
+
+                &__example {
+                    color: $primaryBlue2;
+                    text-decoration: underline;
+                    // border-bottom: 2px solid green;
+                }
+            }
+
+            &__trial {
+                margin-top: 24px;
+                padding-bottom: 30px;
+
+                @include breakpoint-up(large) {
+                    display: flex;
+                }
+
+                &__info {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 14px;
+
+                    span {
+                        margin-left: 10px;
+                    }
+                }
             }
         }
     }
@@ -73,4 +146,9 @@
 
 .conn {
     display: flex;
+}
+
+.tri {
+    margin-right: 18px;
+    // background-color: #676766;
 }
