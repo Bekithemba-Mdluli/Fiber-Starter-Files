@@ -48,7 +48,10 @@
 
             p {
                 color: $primaryGray;
-                max-width: 80%;
+
+                @include breakpoint-up(large) {
+                    max-width: 80%;
+                }
             }
 
         }

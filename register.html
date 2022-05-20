@@ -11,52 +11,67 @@
 
 <body>
     <div class="register">
-        <div>
-            <h1>Fiber</h1>
+        <div class="register-left">
+            <h1 class="register-left__logo">Fiber</h1>
 
-            <h1>Create your Fiber account</h1>
+            <h1 class="register-left__create">Create your Fiber account</h1>
 
-            <label for="name">Your Name</label>
-            <input type="text" id="name" />
+            <div class="register-left-input">
+                <div class="register-left-input__field">
+                    <label for="name">Your Name</label>
+                    <input class="register-left-input__field__inp" type="text" id="name" placeholder="John Doe" />
+                </div>
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" />
+                <div class="register-left-input__field">
+                    <label for="email">E-mail</label>
+                    <input class="register-left-input__field__inp" type="email" id="email"
+                        placeholder="john@example.com" />
+                </div>
 
-            <label for="password">Your Name</label>
-            <input type="password" id="name" />
+                <div class="register-left-input__field">
+                    <label for="password">Your Name</label>
+                    <div class="register-left-input__field__con">
+                        <input class="rrr" type="password" id="password" placeholder="At least 8 characters" />
+                        <button id="submit"><img src="./Assets/icon-eye.svg" alt="Reveal password" /></button>
+                    </div>
+                </div>
+            </div>
 
-            <div>
+            <div class="register-left__terms">
                 <input type="checkbox" />
                 <p>By creating an account on Fiber, you agree to the <a href="#">Terms &amp; Conditions</a></p>
             </div>
 
-            <div>
-                <button>Create Fiber Account</button>
+            <div class="register-left__submit">
+                <button class="btn">Create Fiber Account</button>
             </div>
 
-            <div>
+            <div class="register-left__login">
                 <a class="btn" href="#">Already have an account? <span>Sign in</span></a>
             </div>
         </div>
 
 
-        <div class="hide-for-mobile">
-            <div>
-                <img src="" alt="" />
+        <div class="register-right hide-for-mobile">
+            <div class="register-right__img">
+                <img src="./Assets/signup.png" alt="Sign up image" />
             </div>
 
-            <div>
+            <div class="register-right__content">
                 <h1>Unparalled Templates</h1>
                 <p>Created by a team of professional designers, our templates are unparalled in the market.</p>
             </div>
 
-            <div>
-
+            <div class="register-right__buttons">
+                <input type="radio" name="sign" />
+                <input type="radio" name="sign" />
+                <input type="radio" name="sign" />
+                <input type="radio" name="sign" />
             </div>
         </div>
     </div>
 
-
+    <script src="./app/js/script.js"></script>
 </body>
 
 </html>

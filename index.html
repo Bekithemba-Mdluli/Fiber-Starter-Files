@@ -12,6 +12,28 @@
 <body>
 
     <header class="header">
+        <div class="header-backdrop">
+
+        </div>
+        <div class="header-mobile hide-for-desktop">
+
+            <!-- 
+                <div class="header-mobile__close">
+                <img id="ccc" src="./Assets/icon-close.svg" alt="Close" />
+                </div> 
+            -->
+
+            <ul class="header-mobile__items">
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Features</a></li>
+            </ul>
+
+            <div class="header-mobile__cta">
+                <a class="btn" href="./register.html">Sign Up</a>
+                <a class="btn header-cta__up" href="./register.html">Sign In</a>
+            </div>
+        </div>
 
         <div class="con">
             <div class="header-logo">
@@ -19,15 +41,15 @@
             </div>
 
             <div class="header-menu hide-for-desktop">
-                <img src="./Assets/icon-menu.svg" alt="menu" />
+                <img class="menu" src="./Assets/icon-menu.svg" alt="menu" />
             </div>
 
             <!-- <div class="conn hide-for-mobile"> -->
             <nav class="header-nav hide-for-mobile">
                 <ul class="header-nav__items">
-                    <li>Community</li>
-                    <li>Pricing</li>
-                    <li>Features</li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Features</a></li>
                 </ul>
             </nav>
 
@@ -100,20 +122,20 @@
 
             <div class="features-items__cards">
                 <div class="features-items__cards__img">
-                    <img src="./Assets/icon-clock.svg" alt="Clock" />
+                    <img src="./Assets/icon-code.svg" alt="Clock" />
                 </div>
 
-                <span>Build in minutes</span>
+                <span>Add custom CSS</span>
 
                 <p>With a selection of premade templates, you can build out a portfolio in less than 10 minutes.</p>
             </div>
 
             <div class="features-items__cards">
                 <div class="features-items__cards__img">
-                    <img src="./Assets/icon-clock.svg" alt="Clock" />
+                    <img src="./Assets/icon-phone.svg" alt="Clock" />
                 </div>
 
-                <span>Build in minutes</span>
+                <span>Responsive</span>
 
                 <p>With a selection of premade templates, you can build out a portfolio in less than 10 minutes.</p>
             </div>
@@ -259,7 +281,7 @@
             </ul>
         </div>
     </footer>
-    <script src="./app/js/script.js"></script>
+    <script src="./app/js/home.js"></script>
 </body>
 
 </html>
